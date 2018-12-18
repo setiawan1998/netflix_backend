@@ -24,7 +24,6 @@ class DatabaseSchema extends Schema {
       table.string('description').nullable()
       table.string('starring').notNullable()
       table.integer('category_id').notNullable().unsigned().references('id').inTables('categories')
-      table.string('title').notNullable()
       table.integer('age_restriction').notNullable()
       table.integer('imdb_score').notNullable()
       table.string('video_url').unique().notNullable()
